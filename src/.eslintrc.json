@@ -1,0 +1,9 @@
+{
+  "extends": "twipped/react",
+  "rules": {
+    "import/extensions": "off"
+  },
+  "globals": {
+    "__webpack_nonce__": "writable"
+  }
+}

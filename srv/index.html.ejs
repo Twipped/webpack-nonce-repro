@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script nonce="<%-NONCE %>">
+      window.NONCE = "<%-NONCE %>";
+    </script>
+  </head>
+  <body>
+    <% for (const CHUNK of ENTRIES) { %>
+    <script src="<%-CHUNK%>" type="application/javascript" nonce="<%-NONCE %>"></script>
+    <% }; %>
+  </body>
+</html>
